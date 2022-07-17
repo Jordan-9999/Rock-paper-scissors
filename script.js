@@ -61,9 +61,10 @@ return result
 //console.log(playRound(playerSelection.toLowerCase(), computerSelection));
 
 for(let i = 0; i < 5; i++){
-    let playerSelection = prompt();
     const computerSelection = getComputerChoice();
+    let playerSelection = prompt();
+    alert(playRound(playerSelection.toLowerCase(), computerSelection));
+
     
-    alert(result);
     console.log(playRound(playerSelection.toLowerCase(), computerSelection));
 }
