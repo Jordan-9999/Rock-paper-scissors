@@ -63,14 +63,20 @@ return result
 
     let playerScore = 0;
     let computerScore = 0;
+    
+
 
     let result = "";
+    let endOfGameMessage = "";
+    //let finalScore = ""
+
     const computerSelection = getComputerChoice();
 
 //ok this seems to work! ill will do more work on it later...
 //console.log(playRound(playerSelection.toLowerCase(), computerSelection));
 
 
+function game(){
 
 
 for(let i = 0; i < 5; i++){
@@ -80,11 +86,26 @@ for(let i = 0; i < 5; i++){
 
 
     
-    console.log(playRound(playerSelection.toLowerCase(), computerSelection));
+    //console.log(playRound(playerSelection.toLowerCase(), computerSelection));
     //console.log(playerScore, computerScore);
 }
 
+switch(true){
+    case playerScore > computerScore:
+        endOfGameMessage = ["You've won! Final score: Player", "[", playerScore, "]", "Computer", "[", computerScore ,"]"]; 
+        break;
+    case playerScore < computerScore:
+        endOfGameMessage = ["You've lost! Final score: Player", "[", playerScore, "]", "Computer", "[", computerScore ,"]"];
+        break;
+    case playerScore == computerScore:
+        endOfGameMessage = ["It's a tie! Final score: Player", "[" , playerScore,"]", "Computer", "[", computerScore,"]"]; 
+}
+
+alert(endOfGameMessage.join(" "));
+
+}
 
 
+game();
 
 
