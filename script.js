@@ -77,6 +77,9 @@ function game(){
     const computerSelection = getComputerChoice();
     let playerSelection = prompt();
     alert(playRound(playerSelection.toLowerCase(), computerSelection)); 
+    if(playRoundResult == "It's a draw!"){
+        i--
+    }
 }
 
 
