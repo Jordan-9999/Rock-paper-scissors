@@ -2,15 +2,6 @@ function getComputerChoice(){
 return choices[Math.floor(Math.random()*choices.length)]
 }
 
-//let choices =["rock", "paper", "scissors"];
-
-/*
- We have a function to get the computer to make a random choice.
-"[Math.floor(Math.random()*choices.length)]" is a formula to generate a random selection from your array.
-*/
-
-
-
   
 let choices =["rock", "paper", "scissors"];
     
@@ -67,11 +58,7 @@ function game(){
         return playRoundResult
         }
 
-        /*In the playRound function we have switch statement. Depending on the outcome of a round, there is different message displayed and the score of
-        either the player or computer will go up by one point (playerScore++) unless it's a tie. */
-
-
-
+        
 
         for(let i = 0; i < 5; i++){
     const computerSelection = getComputerChoice();
@@ -95,18 +82,7 @@ switch(true){
 }
 
 alert(endOfGameMessage.join(" "));
-/*The game function:
-For now I've commented out the "for(let i = 0; i < 5; i++)" so it doesn't play 5 rounds.
 
-But the actual code block being executed within that 'for loop' is:
-The result of the "getComputerChoice" function becomes equal to "computerSelection" which is used in the function "playRound".
-
-We also are making a prompt() for the player, the value input by the user is equal to "playerSelection" for the "playGround" function.
-
-Lastly we have an alert with the "playRound" function(that function is returning the result between the playerSelection and computerSelection.) with the playerSelection being converted to lower case (in case someone types it in capitalized). 
-  
-  
-  */
 
 }
 
