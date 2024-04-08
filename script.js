@@ -2,7 +2,6 @@ function getComputerChoice(){
 return choices[Math.floor(Math.random()*choices.length)]
 }
 
-  
 let choices =["rock", "paper", "scissors"];
     
 let playerScore = 0;
