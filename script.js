@@ -6,16 +6,6 @@ let choices =["rock", "paper", "scissors"];
 
 
 
-    
-
-
-
-
-     
-
-     
-     
-     
 function game(){
 
      
@@ -26,13 +16,12 @@ function game(){
      let computerScore = 0;
      
      let playRoundResult = "";
-     let endOfGameMessage = "is it true?";
      let scoreBoard = ["Player: ", playerScore, "Computer: ", computerScore];
      const newScoreBoard = document.createElement("div");
      document.body.appendChild(newScoreBoard);
      newScoreBoard.innerText = scoreBoard.join(" ");
      
-     //const endOfGameMessage = document.createElement("div");
+     
 
 
 const rockButton = document.querySelector("#rockBtn");
@@ -118,36 +107,7 @@ const rockButton = document.querySelector("#rockBtn");
         return playRoundResult
         }
 
-        
-
-       // playerScore = 0;
-       //computerScore = 0;
-
-      /*   function scoreBoardUpdate(){
-          if (playerScore++ || computerScore++){
-               newScoreBoard.innerText = scoreBoard.join(" ");
-          }
-          return
-         }
-      */
-
-
-
-/*
-switch(true){
-    case playerScore = 2:
-        endOfGameMessage = ["You've won! Final score: Player", "[", playerScore, "]", "Computer", "[", computerScore ,"]"]; 
-        break;
-    case computerScore = 5:
-        endOfGameMessage = ["You've lost! Final score: Player", "[", playerScore, "]", "Computer", "[", computerScore ,"]"];
-        break;
-    //case playerScore == computerScore:
-     //   endOfGameMessage = ["It's a tie! Final score: Player", "[" , playerScore,"]", "Computer", "[", computerScore,"]"]; 
-}
-
-alert(endOfGameMessage.join(" "));
-*/
-
+     
 }
 
 
